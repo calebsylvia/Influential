@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     "./*.{html,js}",
-    './pages/**/*.{html,js}'
+    './pages/**/*.{html,js}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
@@ -12,6 +13,8 @@ module.exports = {
       'body': ['Abel', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
